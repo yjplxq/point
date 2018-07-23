@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.point.web.demo.dao.ExcelDAO">
+    <insert id="insertExcel" parameterType="com.point.web.demo.domin.Excel">
+    insert into excel_data (name,age) values(#{name},#{age})
+    </insert>
+</mapper>
