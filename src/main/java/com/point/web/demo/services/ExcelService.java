@@ -13,7 +13,9 @@ public class ExcelService {
 
     public boolean insertNewExcel(Excel excel){
         try {
-            if(excelDAO.insertExcel(excel)){
+            String name = excel.getName();
+            int age = excel.getAge();
+            if(excelDAO.insertExcel(name,age)){
                 return true;
             }else{
                 return false;
