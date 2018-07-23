@@ -17,7 +17,7 @@ import jxl.Sheet;
 import jxl.Workbook;
 
 import com.alibaba.fastjson.JSONObject;
-
+import com.point.web.demo.domin.Excel;
 
 @Controller
 public class FileUploadController {
@@ -37,9 +37,9 @@ public class FileUploadController {
     @RequestMapping("fileUpload")
     @ResponseBody
     public String fileUpload(@RequestParam("fileName") MultipartFile file){
-        JSONObject object = new JSONObject();
+        Excel excel = new Excel();
         if(file.isEmpty()){
-            return "false";
+            return "导入的数据内容为空";
         }
         String fileName = file.getOriginalFilename();
         int size = (int) file.getSize();
@@ -55,13 +55,13 @@ public class FileUploadController {
             try {
                 Workbook workbook = Workbook.getWorkbook(dest);
                 Sheet sheet = workbook.getSheet(0);
+
                 for (int i = 1; i < sheet.getRows(); i++) {
                     Cell cell1 = sheet.getCell(0, i);
                     Cell cell2 = sheet.getCell(1, i);
-
-                    object.put("name", cell1.getContents());
-                    object.put("age", cell2.getContents());
-                    excelService.insertNewExcel(object);
+                    excel.setName(cell1.getContents());
+                    excel.setAge(Integer.parseInt(cell2.getContents()));
+                    excelService.insertNewExcel(excel);
                 }
                 workbook.close();
             }catch (BiffException e) {
@@ -69,15 +69,15 @@ public class FileUploadController {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            return "true";
+            return "导入数据成功";
         } catch (IllegalStateException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-            return "false";
+            return "导入数据失败";
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-            return "false";
+            return "导入数据失败";
         }
     }
 }
