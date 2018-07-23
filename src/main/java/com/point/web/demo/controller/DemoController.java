@@ -1,6 +1,8 @@
 package com.point.web.demo.controller;
 
 import com.point.web.demo.services.DemoService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
@@ -12,11 +14,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Map;
 
+@Api("swaggerDemoController测试的api")
 @Controller
 public class DemoController {
     @Autowired
     private DemoService demoService;
 
+    @ApiOperation(value="mm页测试swagger", notes="123")
     @RequestMapping("/mm")
    public String home(Map<String, Object> map) {
         System.out.println("-----yang");
