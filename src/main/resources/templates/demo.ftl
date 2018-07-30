@@ -5,7 +5,7 @@
 中国
 </div>
 
-<img src="/test.jpg" width="700px" height="400px" />
+<img src="/img/test.jpg" width="700px" height="400px" />
 
 <video width="320" height="240" controls="controls">
   <source src="movie.ogg" type="video/ogg">

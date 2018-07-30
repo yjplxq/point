@@ -21,17 +21,17 @@ public class DemoController {
     private DemoService demoService;
 
     @ApiOperation(value="mm页测试swagger", notes="123")
-    @RequestMapping("/mm")
+    @RequestMapping("/index")
    public String home(Map<String, Object> map) {
         System.out.println("-----yang");
         map.put("hello","world");
-        return "hehe";
+        return "index";
 
     }
 
     @RequestMapping(path = "/ftl/{financeCode}")
     public String made(ModelMap map, @PathVariable("financeCode") String financeCode) {
-        System.out.println("-----yang jin ping ");
+        System.out.println("-----yang ");
         map.put("hello","world");
         System.out.println(demoService.demo());
         return "demo";
