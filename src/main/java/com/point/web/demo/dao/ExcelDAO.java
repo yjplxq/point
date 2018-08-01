@@ -4,6 +4,7 @@ import com.point.web.demo.domin.Excel;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Insert;
+import org.springframework.transaction.annotation.Transactional;
 
 @Mapper
 public interface ExcelDAO {
