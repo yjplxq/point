@@ -1,10 +1,9 @@
-package com.point.web.demo.services;
+package com.scap.web.demo.services;
 
-import com.point.web.demo.dao.ExcelDAO;
+import com.scap.web.demo.dao.ExcelDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.point.web.demo.domin.Excel;
-import com.point.web.demo.dao.ExcelDAO;
+import com.scap.web.demo.domin.Excel;
 
 @Service
 public class ExcelService {

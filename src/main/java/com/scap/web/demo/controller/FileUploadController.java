@@ -1,6 +1,6 @@
-package com.point.web.demo.controller;
+package com.scap.web.demo.controller;
 
-import com.point.web.demo.services.ExcelService;
+import com.scap.web.demo.services.ExcelService;
 import jxl.read.biff.BiffException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,7 +17,7 @@ import jxl.Sheet;
 import jxl.Workbook;
 
 import com.alibaba.fastjson.JSONObject;
-import com.point.web.demo.domin.Excel;
+import com.scap.web.demo.domin.Excel;
 
 @Controller
 public class FileUploadController {

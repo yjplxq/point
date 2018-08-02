@@ -1,6 +1,6 @@
-package com.point.web.demo.services;
+package com.scap.web.demo.services;
 
-import com.point.web.demo.dao.DemoDAO;
+import com.scap.web.demo.dao.DemoDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package com.point.web.demo.dao;
+package com.scap.web.demo.dao;
 
-import com.point.web.demo.domin.Excel;
+import com.scap.web.demo.domin.Excel;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Insert;

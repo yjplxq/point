@@ -1,4 +1,4 @@
-package com.point.web;
+package com.scap.web;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,7 +20,7 @@ public class Swagger2 {
                 .apiInfo(apiInfo())
                 .select()
                 //为当前包路径
-                .apis(RequestHandlerSelectors.basePackage("com.point.web.demo.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.scap.web.demo.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

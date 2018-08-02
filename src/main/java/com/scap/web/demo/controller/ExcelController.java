@@ -1,7 +1,7 @@
-package com.point.web.demo.controller;
+package com.scap.web.demo.controller;
 
-import com.point.web.demo.domin.Excel;
-import com.point.web.demo.services.ExcelService;
+import com.scap.web.demo.domin.Excel;
+import com.scap.web.demo.services.ExcelService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;

@@ -1,6 +1,6 @@
-package com.point.web.demo.controller;
+package com.scap.web.demo.controller;
 
-import com.point.web.demo.services.DemoService;
+import com.scap.web.demo.services.DemoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,12 +21,11 @@ public class DemoController {
     private DemoService demoService;
 
     @ApiOperation(value="mm页测试swagger", notes="123")
-    @RequestMapping("/index")
+    @RequestMapping("/")
    public String home(Map<String, Object> map) {
         System.out.println("-----yang");
         map.put("hello","world");
         return "index";
-
     }
 
     @RequestMapping(path = "/ftl/{financeCode}")

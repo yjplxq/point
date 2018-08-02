@@ -1,6 +1,6 @@
-package com.point.web.demo.domin;
+package com.scap.web.demo.domin;
 
-public class Excel {
+public class Example {
     private  int id;
     private  String name;
     private  int age;
@@ -9,20 +9,20 @@ public class Excel {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getAge() {
         return age;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setAge(int age) {

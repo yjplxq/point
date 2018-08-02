@@ -1,4 +1,4 @@
-package com.point.web;
+package com.scap.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
-//@ComponentScan("point")
-public class InsuranceApplication {
+//@ComponentScan("scap")
+public class ScapApplication {
     public static void main(String[] args) {
-        SpringApplication.run(InsuranceApplication.class, args);
+        SpringApplication.run(ScapApplication.class, args);
     }
 
 }

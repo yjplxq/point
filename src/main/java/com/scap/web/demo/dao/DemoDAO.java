@@ -1,4 +1,4 @@
-package com.point.web.demo.dao;
+package com.scap.web.demo.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
